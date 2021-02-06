@@ -25,4 +25,16 @@ public class State {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder("");
+        for (int i=0; i<3; i++) {
+            for (int j=0; j<3; j++) {
+                builder.append(blocksOrientation[i][j]+" ");
+            }
+            builder.append("\b\n");
+        }
+        return builder.toString();
+    }
 }
