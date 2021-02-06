@@ -25,5 +25,11 @@ public class Test {
         System.out.println(s1.equals(s2));
         System.out.println(problem.isGoalState(problem.initialState));
         System.out.println(problem.isGoalState(s3));
+
+        // Test - Node formation
+        Node rootNode = new Node(problem.initialState, null, null, 0);
+        Node child = new Node (s1, rootNode, legalActions.get(0), 1);
+        Node grandchild = new Node (s2, child, legalActions.get(1), 2);
+        grandchild.tracePath();
     }
 }
