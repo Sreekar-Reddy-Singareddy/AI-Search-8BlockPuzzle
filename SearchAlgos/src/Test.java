@@ -30,6 +30,5 @@ public class Test {
         Node rootNode = new Node(problem.initialState, null, null, 0);
         Node child = new Node (s1, rootNode, legalActions.get(0), 1);
         Node grandchild = new Node (s2, child, legalActions.get(1), 2);
-        grandchild.tracePath();
     }
 }

@@ -5,7 +5,6 @@ import java.io.IOException;
 
 public class Main {
     public static void main (String ... args) throws IOException {
-        System.out.println(args.length);
         FileReader fileReader = new FileReader(args[0]);
         BufferedReader reader = new BufferedReader(fileReader);
         String input = reader.readLine();
@@ -15,7 +14,11 @@ public class Main {
 
         // DFS Search
         Search aiSearch = new Search();
-        Node result = aiSearch.dfsSearch(problem, 10);
+        Solution result = aiSearch.dfsSearch(problem, 10);
         result.tracePath();
+
+        // IDS Search
+        Solution idsSearch = aiSearch.idsSearch(problem);
+        idsSearch.tracePath();
     }
 }

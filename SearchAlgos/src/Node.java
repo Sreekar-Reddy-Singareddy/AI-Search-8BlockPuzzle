@@ -19,17 +19,5 @@ public class Node {
         this.action = action;
         this.pathCost = pathCost;
     }
-
-    public void tracePath() {
-        int steps = tracePath(this);
-        System.out.println("Total Steps: "+steps);
-    }
-
-    private int tracePath(Node node) {
-        if (node == null) return 0;
-        int steps = tracePath(node.parentNode);
-        System.out.println(node.state.toString());
-        return steps+1;
-    }
 }
 
