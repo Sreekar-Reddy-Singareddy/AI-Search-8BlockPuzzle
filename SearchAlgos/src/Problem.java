@@ -37,7 +37,7 @@ public class Problem {
         allActions.add(new Action(Direction.RIGHT, new int[]{0,1}));
         allActions.add(new Action(Direction.UP, new int[]{-1,0}));
         GOAL_STATE = new State(
-                new String[][]{{"1","2","3"},{"4","*","5"},{"6","7","8"}},
+                new String[][]{{"1","2","3"},{"4","5","6"},{"7","8","*"}},
                 new int[]{GRID_SIZE/2,GRID_SIZE/2});
     }
 
