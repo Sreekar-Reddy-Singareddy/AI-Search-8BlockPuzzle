@@ -1,4 +1,3 @@
-import javafx.scene.Parent;
 
 /**
  * This class represents a Node in search tree.

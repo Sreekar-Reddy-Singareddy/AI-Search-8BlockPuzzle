@@ -89,7 +89,7 @@ public class Problem {
      * while in the state.
      */
     public int stepCost (State state, Action action) {
-        return -1;
+        return 1;
     }
 
     /**
@@ -106,4 +106,8 @@ public class Problem {
         }
         return arr;
     }
+
+    public static State getGoalState() {return GOAL_STATE;}
+
+
 }
